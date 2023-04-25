@@ -9,7 +9,7 @@ export default function Search(props){
 		props.onSearch(searchText)
 	}
 	return(
-		<div className="w-[50%] p-10">
+		<div className="w-[50%] pt-10 pb-2">
 			<div className=" flex contents-center drop-shadow-lg">
 				<span className="p-4 text-slate-400 bg-white rounded-l-lg">
 			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
