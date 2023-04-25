@@ -12,14 +12,19 @@ export default function All() {
 			let response = await fetch('https://pokebuildapi.fr/api/v1/pokemon')
 			let data = await response.json()
 			setPokemons(data)
+			console.log (data)
 		}
 		fetchPokemons()
 	}, [])
-	console.log (pokemons)
 
 	const handleSearch = (searchText) => {
 		if (searchText.length>3){
 			console.log("Texte de recherche : ", searchText)
+			pokemons.map(pokemon =>{
+				// console.log (pokemon.name)
+
+			})
+
 		}
 	}
 
