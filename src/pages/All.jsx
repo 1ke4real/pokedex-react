@@ -36,6 +36,7 @@ export default function All() {
 	}
 
 	useEffect(()=>{
+		console.log (cardData)
 	}, [cardData])
 	const clearResult = () =>{
 		setResultsPokedexs([])
@@ -63,7 +64,7 @@ export default function All() {
 							action={()=> {
 								setCardData(resultPokedex)
 								clearResult(resultPokedex)
-								console.log (cardData)
+
 							}}
 
 						/>
@@ -75,9 +76,16 @@ export default function All() {
 			{cardData&& (
 					<Card
 					id={cardData.id}
-					sprite={cardData.sprite}
+					image={cardData.image}
 					name={cardData.name}
 					types={cardData.apiTypes}
+					hp={cardData.stats.HP}
+					attack={cardData.stats.attack}
+					defense={cardData.stats.defense}
+					speAttack={cardData.stats.special_attack}
+					speDefence={cardData.stats.special_defense}
+					speed={cardData.stats.speed}
+					sprite={cardData.sprite}
 					/>
 			)}
 
