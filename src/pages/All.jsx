@@ -31,6 +31,7 @@ export default function All() {
 		}
 		else {
 			setResultsPokedexs(null)
+			setCardData(null)
 		}
 	}
 
@@ -62,6 +63,7 @@ export default function All() {
 							action={()=> {
 								setCardData(resultPokedex)
 								clearResult(resultPokedex)
+								console.log (cardData)
 							}}
 
 						/>
@@ -75,6 +77,7 @@ export default function All() {
 					id={cardData.id}
 					sprite={cardData.sprite}
 					name={cardData.name}
+					types={cardData.apiTypes}
 					/>
 			)}
 
