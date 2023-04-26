@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Completion(props){
     return(
-        <div className="w-[50%] flex p-2 hover:bg-gray-300 rounded-lg cursor-pointer bg-white m-1" key={props.id} onClick={props.action}>
+        <div className="w-[50%] flex p-2 hover:bg-gray-300 drop-shadow-lg rounded-lg cursor-pointer bg-white m-1" key={props.id} onClick={props.action}>
             <div className="flex contents-center drop-shadow-lg" >
                 <div className="h-10 w-10 rounded-sm flex items-center justify-center text-3xl mr-4">
                     <img src={props.sprite} alt=""/>
